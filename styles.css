@@ -8,6 +8,7 @@
     --footer-color: #E7E9FC;
     --logo-white-color: #F4F4FD;
     --second-header-color: #2E2F42;
+    --icon-grey-color: #8E8F99;
 }
 
 p {
@@ -263,6 +264,17 @@ header {
     margin-top: 8px;
 }
 
+.skills-icon-wrap {
+    background: #F4F4FD;
+    border-radius: 4px;
+    max-width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 /* --------------Mission section------------ */
 
 .mission {
@@ -350,9 +362,91 @@ header {
     width: 264px;
 }
 
+/* --------------Social-icons------------ */
+
+.social-link-list {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+
+    background-color: var(--button-text-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.social-link:hover{
+    background-color:var(--button-dark-color);
+
+}
+/* --------------Customers------------ */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--icon-grey-color);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.customers-icon {
+    fill: var(--icon-grey-color)
+}
+
+.customers-item:hover, 
+:focus{
+    outline-color: var(--button-dark-color);
+}
+
+.customers-icon:hover,
+:focus {
+    fill: var(--button-dark-color);
+}
+
+
 /* --------------Footer------------ */
 
 .footer {
+    display: flex;
+    gap: 120px;
+
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -384,6 +478,27 @@ header {
     text-transform: uppercase;
 
     color: var(--logo-white-color)
+}
+
+.footer >.container{
+    display: flex;
+    gap: 120px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.02em;
+
+    color: var(--white-color);
+}
+
+.social-media-text {
+    margin-bottom: 16px;
+}
+
+.social-media-list {
+    display: flex;
 }
 
 /* ----------Portfolio------- */
@@ -422,7 +537,6 @@ header {
     letter-spacing: 0.04em;
 
     color: var(--button-text-color);
-
 }
 
 .filter-list-gallery {
