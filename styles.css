@@ -501,6 +501,15 @@ header {
     display: flex;
 }
 
+.social-media-list>.social-link-list> .social-link{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-icon{
+    fill: var(--logo-white-color);
+}
+
 /* ----------Portfolio------- */
 .filter{
     padding-top: 96px;
